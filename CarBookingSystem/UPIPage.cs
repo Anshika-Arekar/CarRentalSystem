@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace CarBookingSystem
 {
-    public partial class Car1 : Form
+    public partial class UPIPage : Form
     {
-        public Car1()
+        public UPIPage()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            payment p = new payment();
-            this.Visible = false;
-            p.Show();
+            MessageBox.Show("Payment Successful.");
+            MessageBox.Show("Hope you enjoy the ride!");
         }
     }
 }
