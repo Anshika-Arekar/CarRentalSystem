@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace CarBookingSystem
 {
-    public partial class Car1 : Form
+    public partial class CahsPage : Form
     {
-        public Car1()
+        public CahsPage()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            payment p = new payment();
-            this.Visible = false;
-            p.Show();
         }
     }
 }
