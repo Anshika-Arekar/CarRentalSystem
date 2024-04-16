@@ -39,16 +39,17 @@
             this.username = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Broadway", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Algerian", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(318, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.Size = new System.Drawing.Size(156, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "RentWheel";
             // 
@@ -70,7 +71,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Bodoni MT", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(217, 145);
+            this.label3.Location = new System.Drawing.Point(217, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 28);
             this.label3.TabIndex = 2;
@@ -82,7 +83,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Bodoni MT", 14F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(223, 205);
+            this.label4.Location = new System.Drawing.Point(222, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 28);
             this.label4.TabIndex = 3;
@@ -102,7 +103,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(379, 91);
+            this.textBox1.Location = new System.Drawing.Point(379, 97);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 5;
@@ -110,7 +111,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(379, 145);
+            this.textBox2.Location = new System.Drawing.Point(379, 151);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 6;
@@ -118,8 +119,7 @@
             // 
             // username
             // 
-
-            this.username.Location = new System.Drawing.Point(337, 176);
+            this.username.Location = new System.Drawing.Point(379, 210);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(100, 22);
             this.username.TabIndex = 7;
@@ -127,8 +127,7 @@
             // 
             // password
             // 
-
-            this.password.Location = new System.Drawing.Point(337, 224);
+            this.password.Location = new System.Drawing.Point(379, 275);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 22);
             this.password.TabIndex = 8;
@@ -145,6 +144,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // back
+            // 
+            this.back.AutoSize = true;
+            this.back.BackColor = System.Drawing.Color.Transparent;
+            this.back.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.back.Location = new System.Drawing.Point(34, 21);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(39, 26);
+            this.back.TabIndex = 10;
+            this.back.Text = "<-";
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -153,6 +165,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
@@ -183,5 +196,6 @@
         private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label back;
     }
 }

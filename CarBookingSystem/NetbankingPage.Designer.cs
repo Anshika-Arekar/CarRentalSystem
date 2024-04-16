@@ -34,6 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.back = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -98,11 +99,23 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Bank Details";
             // 
+            // back
+            // 
+            this.back.AutoSize = true;
+            this.back.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Location = new System.Drawing.Point(25, 22);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(39, 26);
+            this.back.TabIndex = 6;
+            this.back.Text = "<-";
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // NetbankingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -124,5 +137,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label back;
     }
 }

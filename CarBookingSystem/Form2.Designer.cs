@@ -45,10 +45,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Broadway", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Algerian", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(322, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.Size = new System.Drawing.Size(150, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "RentWheel";
             // 
@@ -58,7 +58,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bodoni MT", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(236, 103);
+            this.label2.Location = new System.Drawing.Point(108, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 28);
             this.label2.TabIndex = 1;
@@ -70,7 +70,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Bodoni MT", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(236, 158);
+            this.label3.Location = new System.Drawing.Point(108, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 28);
             this.label3.TabIndex = 2;
@@ -82,7 +82,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Bodoni MT", 14F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(236, 216);
+            this.label4.Location = new System.Drawing.Point(108, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(194, 28);
             this.label4.TabIndex = 3;
@@ -91,22 +91,22 @@
             // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(358, 85);
+            this.username.Location = new System.Drawing.Point(371, 94);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(100, 22);
             this.username.TabIndex = 4;
             this.username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(358, 127);
+            this.password.Location = new System.Drawing.Point(371, 158);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 22);
+            this.password.TabIndex = 10;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(465, 222);
+            this.textBox3.Location = new System.Drawing.Point(371, 222);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 6;
@@ -125,7 +125,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Bodoni MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Cyan;
             this.linkLabel1.Location = new System.Drawing.Point(332, 361);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(126, 21);

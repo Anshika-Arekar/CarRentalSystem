@@ -33,6 +33,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.back = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -77,11 +78,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.back);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-4, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 123);
             this.panel1.TabIndex = 5;
+            // 
+            // back
+            // 
+            this.back.AutoSize = true;
+            this.back.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Location = new System.Drawing.Point(26, 20);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(39, 26);
+            this.back.TabIndex = 2;
+            this.back.Text = "<-";
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // label1
             // 
@@ -147,6 +160,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Rent XUV 300";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Car5
             // 
@@ -185,5 +199,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label back;
     }
 }
