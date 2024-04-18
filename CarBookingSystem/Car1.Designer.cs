@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Car1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.back = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.back = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 123);
             this.panel1.TabIndex = 0;
+            // 
+            // back
+            // 
+            this.back.AutoSize = true;
+            this.back.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Location = new System.Drawing.Point(25, 24);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(39, 26);
+            this.back.TabIndex = 2;
+            this.back.Text = "<-";
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // label1
             // 
@@ -146,17 +157,6 @@
             this.button1.Text = "Rent Altroz";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // back
-            // 
-            this.back.AutoSize = true;
-            this.back.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(25, 24);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(39, 26);
-            this.back.TabIndex = 2;
-            this.back.Text = "<-";
-            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // Car1
             // 

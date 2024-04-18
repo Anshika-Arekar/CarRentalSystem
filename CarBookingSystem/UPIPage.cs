@@ -21,6 +21,9 @@ namespace CarBookingSystem
         {
             MessageBox.Show("Payment Successful.");
             MessageBox.Show("Hope you enjoy the ride!");
+            details d = new details();
+            this.Visible = false;
+            d.Show();
         }
 
         private void back_Click(object sender, EventArgs e)

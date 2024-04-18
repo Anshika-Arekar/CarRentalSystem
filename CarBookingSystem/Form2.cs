@@ -70,7 +70,7 @@ namespace CarBookingSystem
                             f3.Show();
                             con.Close();
                         }
-                        else MessageBox.Show("aaaaaa");
+                        else MessageBox.Show("error");
                     }
                     else
                     {
