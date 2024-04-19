@@ -15,19 +15,50 @@ namespace CarBookingSystem
 
     public partial class Form3 : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\areka\OneDrive\Documents\miniProDB.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False; TrustServerCertificate=true");
         public Form3()
         {
             InitializeComponent();
-            if (rentedTo != null)
-            {
-                label3.Visible = true;
-            }
-            else
-            {
-                label3.Visible = false;
-            }
+            con.Open();
+            SqlCommand scom = con.CreateCommand();
+
+            scom.CommandText = "select rentedTo from car where carName = 'Altroz' ";
+            String rentedTo = scom.ExecuteNonQuery().ToString();
+            if (rentedTo != "NULL") label3.Visible = false;
+            else label3.Visible = true;
+
+
+            scom.CommandText = "select rentedTo from car where carName = 'Swift' ";
+            rentedTo = scom.ExecuteNonQuery().ToString();
+            if (rentedTo != "NULL") label4.Visible = false;
+            else label4.Visible = true;
+
+
+            scom.CommandText = "select rentedTo from car where carName = 'Safari' ";
+            rentedTo = scom.ExecuteNonQuery().ToString();
+            if (rentedTo != "NULL") label5.Visible = false;
+            else label5.Visible = true;
+
+
+            scom.CommandText = "select rentedTo from car where carName= 'Superb TSI Sportline' ";
+            rentedTo = scom.ExecuteNonQuery().ToString();
+            if (rentedTo != "NULL") label1.Visible = false;
+            else label1.Visible = true;
+
+
+            scom.CommandText = "select rentedTo from car where carName = 'XUV 500' ";
+            rentedTo = scom.ExecuteNonQuery().ToString();
+            if (rentedTo != "NULL") label2.Visible = false;
+            else label2.Visible = true;
+
+
+            scom.CommandText = "select rentedTo from car where carName = 'Ertiga' ";
+            rentedTo = scom.ExecuteNonQuery().ToString();
+            if (rentedTo != "NULL") label7.Visible = false;
+            else label7.Visible = true;
+            con.Close();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\areka\OneDrive\Documents\miniProDB.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False; TrustServerCertificate=true");
+    
 
         // Main UI
         private void Form3_Load(object sender, EventArgs e)
